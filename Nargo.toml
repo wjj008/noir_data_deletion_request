@@ -1,7 +1,7 @@
 [package]
 name = "noir_data_deletion_request"
 type = "bin"
-authors = ["DAppDevMaster"] # Using the GitHub account name you provided
+authors = ["DataGuardiansZK"] 
 compiler_version = ">=0.20.0" # Adjust if necessary, e.g., "0.27.0"
 
 [dependencies]
