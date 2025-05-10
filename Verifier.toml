@@ -1,0 +1,12 @@
+# Verifier.toml for ZK Data Deletion Request Proof
+
+# === Public Inputs ===
+# These MUST match the public inputs in Prover.toml (after recomputation of hashes).
+
+data_id = "user_profile_picture_001"
+request_epoch = "20240722"
+
+# !!! CRITICAL: These hash values are PLACEHOLDERS.
+# They must match the recomputed values from Prover.toml.
+claimed_user_identity_commitment = "303030..." # PLACEHOLDER - MUST MATCH PROVER'S RECOMPUTED VALUE
+claimed_deletion_request_nullifier = "404040..." # PLACEHOLDER - MUST MATCH PROVER'S RECOMPUTED VALUE

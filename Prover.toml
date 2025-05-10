@@ -1,0 +1,19 @@
+# Prover.toml for ZK Data Deletion Request Proof
+
+# === Private Inputs ===
+user_secret = "UserDataSecretKey456"
+identity_blinding_factor = "idBlindXYZ"
+
+# === Public Inputs ===
+data_id = "user_profile_picture_001" # Identifier for the data to be deleted
+request_epoch = "20240722"           # Current request period
+
+# !!! CRITICAL: The hash values below are PLACEHOLDERS.
+# You MUST recompute these using the actual private inputs (user_secret, identity_blinding_factor, data_id, request_epoch)
+# and the pedersen_hash logic from src/main.nr.
+
+# claimed_user_identity_commitment = pedersen_hash(["UserDataSecretKey456", "idBlindXYZ"])
+claimed_user_identity_commitment = "303030..." # PLACEHOLDER - RECOMPUTE
+
+# claimed_deletion_request_nullifier = pedersen_hash(["UserDataSecretKey456", "user_profile_picture_001", "20240722"])
+claimed_deletion_request_nullifier = "404040..." # PLACEHOLDER - RECOMPUTE
